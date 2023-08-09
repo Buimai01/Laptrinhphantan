@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tuan2.BT2_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Câu 1. Alert có bao nhiêu cách hiển thị thông báo ?"/>
+    <RadioButton text="A: Có 2 cách" fx:id="radioButton1">
+        <toggleGroup>
+            <ToggleGroup fx:id="dapAn1"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton text="B: Có 6 cách" toggleGroup="$dapAn1" fx:id="radioButton2"/>
+    <RadioButton text="C: Có 5 cách" toggleGroup="$dapAn1" fx:id="radioButton3"/>
+    <RadioButton text="D: Có 10 cách" toggleGroup="$dapAn1" fx:id="radioButton4"/>
+
+    <Label text="Câu 2: Vé xem blackpink hiện tại có giá bao nhiu ?"/>
+    <RadioButton text="A: 10 trịu" fx:id="radioButton5">
+        <toggleGroup>
+            <ToggleGroup fx:id="dapAn2"/>
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton text="B: 15 trịu" toggleGroup="$dapAn2" fx:id="radioButton6"/>
+    <RadioButton text="C: 20 trịu" toggleGroup="$dapAn2" fx:id="radioButton7"/>
+    <RadioButton text="D: 9 trịu 8" toggleGroup="$dapAn2" fx:id="radioButton8"/>
+
+    <Button text="Submit" onAction="#click"/>
+    <Label text=" " fx:id="bai1"/>
+    <Label text=" " fx:id="bai2"/>
+</VBox>

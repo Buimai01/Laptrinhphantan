@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane fx:id="ap" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.tuan2.File_chooserController">
+    <children>
+<ImageView fx:id="imageView" fitWidth="396.0" fitHeight="224.0" layoutY="50.0" layoutX="100.0" pickOnBounds="true"
+           preserveRatio="true" />
+        <Button layoutX="256.0" layoutY="300.0" mnemonicParsing="false" onAction="#chooseImage" text="Open" />
+    </children>
+</AnchorPane>

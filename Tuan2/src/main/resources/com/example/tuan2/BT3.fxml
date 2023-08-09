@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="TOP_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.tuan2.Student3_Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <TableView fx:id="tableView">
+        <columns>
+            <TableColumn prefWidth="100" text="ID" fx:id="id"/>
+            <TableColumn prefWidth="100" text="Name" fx:id="name"/>
+            <TableColumn prefWidth="100" text="Class" fx:id="class3"/>
+            <TableColumn prefWidth="100" text="Gender" fx:id="gender"/>
+            <TableColumn prefWidth="100" text="Address" fx:id="address"/>
+            <TableColumn prefWidth="100" text="Score" fx:id="score"/>
+        </columns>
+    </TableView>
+    <Label text="Enter your id:"/>
+    <TextField fx:id="so"/>
+    <Label text="Enter your name:"/>
+    <TextField fx:id="ten"/>
+    <Label text="Enter your class:"/>
+    <TextField fx:id="lop"/>
+    <Label text="Enter your gender:"/>
+    <TextField fx:id="gioiTinh"/>
+    <Label text="Enter your address:"/>
+    <TextField fx:id="diaChi"/>
+    <Label text="Enter your score:"/>
+    <TextField fx:id="diem"/>
+    <Button onAction="#click" text="Submit"/>
+</VBox>
